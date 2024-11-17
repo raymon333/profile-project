@@ -1,6 +1,7 @@
 
 import TextChange from '../TextChange';
 import avatarImg from '../../assets/image1.png';
+import { Link } from 'react-router-dom';
 export default function Home(){
  return (
 
@@ -14,10 +15,12 @@ export default function Home(){
          This is Rashcode software developer dedicated my time to learn this project impressed
           with the support of the following technologies and time spending.
         </p>
+        <Link to="/contact">
         <button className="mt-5 md:mt-10 text-white py-3 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85
          duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
           Contact Me
         </button>
+        </Link>
       </div>
       <div>
         <img className="" src={avatarImg} alt="" />
